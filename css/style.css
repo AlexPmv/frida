@@ -80,3 +80,43 @@ a {
     border-radius: 50px;
     padding: 30px 110px;
 }
+
+/* about */
+
+.about {
+    background-image: url('../images/about-bkg.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding: 115px 0 165px;
+}
+
+.about__title {
+    font-family: 'Gropled', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    margin-bottom: 40px;
+}
+
+.about__text {
+    line-height: 1.7;
+    margin-bottom: 75px;
+}
+
+.about__gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery__item {
+    width: calc((100% - 80px)/3);
+    margin: 0 40px 40px 0;
+}
+
+.gallery__item:nth-child(3n + 3) {
+    margin-right: 0;
+}
+
+.gallery__item-img {
+    width: 100%;
+}
