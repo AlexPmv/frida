@@ -21,6 +21,11 @@ a {
     text-decoration: none;
 }
 
+.title {
+    font-family: 'Gropled', serif;
+    font-weight: 700;
+}
+
 /* header */
 
 .header {
@@ -64,9 +69,7 @@ a {
 
 .header__title {
     max-width: 588px;
-    font-family: 'Gropled', serif;
     font-size: 80px;
-    font-weight: 700;
     margin-bottom: 33px;
 }
 
@@ -92,8 +95,6 @@ a {
 }
 
 .about__title {
-    font-family: 'Gropled', sans-serif;
-    font-weight: 700;
     font-size: 64px;
     margin-bottom: 40px;
 }
@@ -119,4 +120,56 @@ a {
 
 .gallery__item-img {
     width: 100%;
+}
+
+/* tickets */
+
+.tickets {
+    background-image: url('../images/tickets-bkg.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    color: #F0C000;
+    padding: 171px 0 87px;
+}
+
+.tickets .container {
+    display: flex;
+}
+
+.tickets__text-block {
+    max-width: 355px;
+    margin-right: 58px;
+}
+
+.tickets__title {
+    font-size: 64px;
+    margin-bottom: 55px;
+}
+
+.tickets__text {
+    line-height: 1.2;
+}
+
+.tickets__amount-control {
+    display: flex;
+}
+
+.tickets__amount-hint {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.amount-control-block {
+    border: 3px solid #F0C000;
+    border-radius: 50px;
+    padding: 5px 20px;
+}
+
+.amount-control-item {
+    font-size: 20px;
+}
+
+.amount-control-item:not(:first-child) {
+    margin-left: 36px;
 }

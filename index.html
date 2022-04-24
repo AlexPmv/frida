@@ -55,6 +55,36 @@
                 </div>
             </div>
         </section>
+        <section class="tickets">
+            <div class="container">
+                <div class="tickets__text-block">
+                    <h2 class="title tickets__title">Билеты</h2>
+                    <p class="tickets__text">Вам не нужно выбирать конкретную 
+                        дату посещения: билет дает право однократного прохода 
+                        через входные турникеты музея без очереди и без регистрации 
+                        на протяжении всего времени проведения выставки.
+                    </p>
+                </div>
+                <form class="tickets__form">
+                    <div class="tickets__amount-control">
+                        <span class="tickets__amount-hint">Выберите кол-во билетов:</span>
+                        <div class="amount-control-block">
+                            <span class="amount-control-item">-</span>
+                            <span class="amount-control-item">1</span>
+                            <span class="amount-control-item">+</span>
+                        </div>
+                    </div>
+                    <input class="buyer-name" type="text" placeholder="Как Вас зовут?" required>
+                    <input class="buyer-email" type="email" placeholder="На какой Email прислать билет?" required>
+                    <span class="general-price">Цена: 1000 ₽</span>
+                    <button class="buy-button" type="submit">Оплатить</button>
+                    <label class="but-checkbox-label">
+                        <input class="argeement-buy-checkbox" type="chechbox" required>
+                        <p class="argeement-buy-text">Согласен с условиями <u>пользовательского соглашения</u></p>
+                    </label>    
+                </form>
+            </div>
+        </section>
     </main>
 </body>
 </html>
