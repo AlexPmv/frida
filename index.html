@@ -69,22 +69,47 @@
                     <div class="tickets__amount-control">
                         <span class="tickets__amount-hint">Выберите кол-во билетов:</span>
                         <div class="amount-control-block">
-                            <span class="amount-control-item">-</span>
-                            <span class="amount-control-item">1</span>
-                            <span class="amount-control-item">+</span>
+                            <img class="amount-item amount-minus" src="images/minus.jpg">
+                            <span class="amount-item amount-count">1</span>
+                            <img class="amount-item amount-plus" src="images/plus.png">
                         </div>
                     </div>
                     <input class="buyer-name" type="text" placeholder="Как Вас зовут?" required>
                     <input class="buyer-email" type="email" placeholder="На какой Email прислать билет?" required>
                     <span class="general-price">Цена: 1000 ₽</span>
                     <button class="buy-button" type="submit">Оплатить</button>
-                    <label class="but-checkbox-label">
-                        <input class="argeement-buy-checkbox" type="chechbox" required>
-                        <p class="argeement-buy-text">Согласен с условиями <u>пользовательского соглашения</u></p>
+                    <label class="buy-checkbox-label">
+                        <input class="agreement-buy-checkbox" type="checkbox" required>
+                        <span class="checkbox-switcher"></span>
+                        <div class="agreement-text-block">
+                            <span class="agreement-buy-text">Согласен с условиями</span>
+                            <a class="agreement-buy-link" href="">
+                                <span class="agreement-link-text">
+                                    пользовательского соглашения
+                                </span>
+                            </a>    
+                        </div>
                     </label>    
                 </form>
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__quote">
+                <q>Я никогда не рисую сны или кошмары. Я рисую свою собственную реальность.</q>
+            </p>
+            <cite class="footer__quote-author">Фрида Кало</cite>
+            <div class="address-box">
+                <span class="footer__address-hint">
+                    Как добраться:
+                </span>
+                <address class="footer__address">
+                    Санкт-Петербург, 29-я линия Васильевского острова, д. 2
+                </address>
+                <a class="footer__phone" href="tel:+78123240809">+7 (812) 324-08-09</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

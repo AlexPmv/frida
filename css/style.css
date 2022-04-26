@@ -153,23 +153,192 @@ a {
 
 .tickets__amount-control {
     display: flex;
+    align-items: center;
 }
 
 .tickets__amount-hint {
     display: inline-block;
     margin-right: 16px;
+    flex-shrink: 0;
+}
+
+.amount-control-block, .buyer-name, .buyer-email, .buy-button {
+    border: 4px solid #F0C000;
+    border-radius: 50px;
 }
 
 .amount-control-block {
-    border: 3px solid #F0C000;
-    border-radius: 50px;
-    padding: 5px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 232px;
+    padding: 8px 0;
+    margin-bottom: 20px;
 }
 
-.amount-control-item {
-    font-size: 20px;
+.amount-minus, .amount-plus {
+    width: 30px;
+    cursor: pointer;
 }
 
-.amount-control-item:not(:first-child) {
-    margin-left: 36px;
+.amount-count {
+    font-size: 32px;
+}
+
+.buyer-name {
+    margin-bottom: 20px;
+}
+
+.buyer-email {
+    margin-bottom: 25px;
+}
+
+.buyer-name, .buyer-email, .buy-button {
+    width: 100%;
+    height: 70px;
+}
+
+.buyer-name, .buyer-email {
+    background: transparent;  
+    font-size: 24px;
+    font-weight: 500;
+    padding: 0 55px;
+    color: #F0C000;
+}
+
+.buyer-name::placeholder, .buyer-email::placeholder {
+    font-size: 24px;
+    font-weight: 500;
+    color: #F0C000;
+}
+
+.buyer-name:focus, .buyer-email:focus {
+    outline-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.general-price {
+    display: inline-block;
+    margin-bottom: 46px;
+}
+
+.buy-button {
+    background-color: #F0C000;
+    font-size: 36px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 66px;
+}
+
+.buy-button:hover {
+    border-color: #ffffff;
+    background-color: #ffffff;
+    color: #F0C000;
+}
+
+.buy-checkbox-label {
+    display: flex;
+    cursor: pointer;
+    line-height: 1.2;
+    font-size: 23px;
+}
+
+.agreement-buy-checkbox {
+    position: absolute;
+    width: 1px;
+    clip: rect(0, 0, 0, 0);
+}
+
+.checkbox-switcher {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+    margin: 5px 26px 0 0;
+}
+
+.checkbox-switcher::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 4px solid #F0C000;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.checkbox-switcher::after {
+    content: "";
+    position: absolute;
+    display: none;
+    background-color: #F0C000;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.agreement-buy-checkbox:checked + .checkbox-switcher::after {
+    display: block;
+}
+
+.agreement-buy-link {
+    display: inline;
+}
+
+.agreement-link-text {
+    color: #F0C000;
+    text-decoration: underline;
+}
+
+/* footer */
+
+.footer {
+    background-image: url(../images/footer-bkg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding: 126px 0 180px;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer__quote {
+    width: 815px;
+    font-family: 'Gropled', serif;
+    font-size: 40px;
+    line-height: 1.5;
+    margin-bottom: 65px;
+}
+
+.footer__quote-author {
+    font-size: 36px;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 147px;
+}
+
+.address-box {
+    max-width: 725px;
+    margin-right: -55px;
+}
+
+.footer__address-hint {
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+.footer__address {
+    font-style: normal;
+    margin-bottom: 25px;
+}
+
+.footer__phone {
+    font-weight: 600;
 }
